@@ -14,3 +14,13 @@ The .sh files can be run in defferent shells like bash, zsh, sh, etc, by specify
  3. Execute the file by `./hello-world.sh`
 
 Even if we add `#!/bin/bash` in the file, we can run the same file with different shells.
+
+## Reading values from user input
+Prompts the user user to enter his/her name and outputs the input value in the terminal.
+```
+echo "Please enter your name:"
+read name
+echo "Hello, $name"
+```
+
+`name` is the variable name and the value of it outputs as `$name`
