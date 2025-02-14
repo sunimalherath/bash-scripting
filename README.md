@@ -26,3 +26,20 @@ echo "Hello, $name"
 `name` is the variable name and the value of it outputs as `$name`
 
 [code](./1_read_values_user_prompts)
+
+## 2. Variables & Constants
+Variables can be defined with a name and the value. 
+
+```
+x = 23
+```
+
+> Once a variable assigned with a certain value, you can assign a value from a different type to it.
+> 
+> `x = "new value"`
+
+Constants can be defined with the keyword `readonly`. 
+
+```
+readonly water_boiling_point = 100`
+```
