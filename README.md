@@ -15,7 +15,7 @@ The .sh files can be run in defferent shells like bash, zsh, sh, etc, by specify
 
 Even if we add `#!/bin/bash` in the file, we can run the same file with different shells.
 
-## Reading values from user input
+## 1. Reading values from user input
 Prompts the user user to enter his/her name and outputs the input value in the terminal.
 ```
 echo "Please enter your name:"
@@ -24,3 +24,31 @@ echo "Hello, $name"
 ```
 
 `name` is the variable name and the value of it outputs as `$name`
+
+[code](./1_read_values_user_prompts)
+
+## 2. Variables & Constants
+Variables can be defined with a name and the value. 
+
+```
+x = 23
+```
+
+> Once a variable assigned with a certain value, you can assign a value from a different type to it.
+> 
+> `x = "new value"`
+
+Constants can be defined with the keyword `readonly`. 
+
+```
+readonly water_boiling_point = 100`
+```
+
+There are two ways to assign output of a linux command to a variable
+
+1. `this_month=$(cal)`
+2. ``this_month=`cal` ``
+
+However the second method cannot use to include output of nested commands. 
+
+
