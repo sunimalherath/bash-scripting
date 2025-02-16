@@ -43,3 +43,12 @@ Constants can be defined with the keyword `readonly`.
 ```
 readonly water_boiling_point = 100`
 ```
+
+There are two ways to assign output of a linux command to a variable
+
+1. `this_month=$(cal)`
+2. ``this_month=`cal` ``
+
+However the second method cannot use to include output of nested commands. 
+
+
