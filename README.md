@@ -49,6 +49,6 @@ There are two ways to assign output of a linux command to a variable
 1. `this_month=$(cal)`
 2. ``this_month=`cal` ``
 
-However the second method cannot use to include output of nested commands. 
+However the second method cannot be used to include output of nested commands. 
 
 
