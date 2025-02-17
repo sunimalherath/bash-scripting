@@ -25,7 +25,7 @@ echo "Hello, $name"
 
 `name` is the variable name and the value of it outputs as `$name`
 
-[code](./1_read_values_user_prompts)
+[code example](./1_read_values_user_prompts)
 
 ## 2. Variables & Constants
 Variables can be defined with a name and the value. 
@@ -51,4 +51,22 @@ There are two ways to assign output of a linux command to a variable
 
 However the second method cannot be used to include output of nested commands. 
 
+### Passing Command Line Arguments
+Arguments can be passed in to the bash script in the command line after the script name. 
+
+e.g: `<script-name.sh> <arg1> <arg2> ...`
+
+[code example](./2_command_line_args)
+
+### Special Bash Variables
+
+```
+$0      => the name of the bash script
+$1..$n  => bash script arguments (i.e. $1 is the first argument...)
+$$      => process id of the current shell
+$#      => total number of arguments passed to the script
+$@      => the value of all arguments passed to the script
+$?      => the exit status of the last executed command
+$!      => the process id of the last executed command
+```
 
