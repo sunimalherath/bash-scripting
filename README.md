@@ -70,3 +70,20 @@ $?      => the exit status of the last executed command
 $!      => the process id of the last executed command
 ```
 
+## Arrays
+Arrays can be normal (all elements with the same data type) or can be hybrid (with mixed data types)
+
+### Access Array Elements
+- To get the value of a specific element: `${arr1[3]}`
+- To list all the elements: `${arr1[*]}`
+- To display the number of elements in an array: `{#arr1[@]}`
+- To change an element of an array `arr1[4] = "element5"`
+
+### Append to Arrays
+`arr1+=("new element")`
+
+### Remove elements from a Array
+- To remove a single element `unset arr1[3]`
+- To remove all the elements `unset arr1`
+  
+
