@@ -87,3 +87,25 @@ Arrays can be normal (all elements with the same data type) or can be hybrid (wi
 - To remove all the elements `unset arr1`
   
 
+## Arithmetic Operations
+
+### Addition and Substraction
+```
+n1=23
+n2=3
+
+total=$((n1 + n2))
+
+difference=$((n1 - n2))
+```
+
+### Multiplication and Division
+```
+n1=5
+n2=4
+
+multiplied_val=$n1 * $n2
+
+divided_val=$n1 - $n2
+```
+
