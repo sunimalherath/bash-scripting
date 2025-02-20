@@ -109,3 +109,23 @@ multiplied_val=$n1 * $n2
 divided_val=$n1 - $n2
 ```
 [addtion example](./3_arithmetic_operations)
+
+
+### Power Operations
+```
+n1=2
+n2=3
+
+result=$(($n1 ** $n2))
+```
+
+### Modulus (Remainder)
+```
+n1=18
+n2=4
+
+result=$((n1 % n2))
+```
+
+
+
