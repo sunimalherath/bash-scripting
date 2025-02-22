@@ -128,4 +128,93 @@ result=$((n1 % n2))
 ```
 
 
+## Working with Strings
+
+### Get number of characters in a string
+```
+name="John Doe"
+echo ${#name}
+```
+
+This counts and prints all the characters in the variable `name` including spaces.
+
+### Concatanate 
+```
+name="Area"
+code=51
+
+echo $name$code
+```
+
+### Finding location of a substring
+```
+name="John Doe"
+word_to_find="Doe"
+echo "$word_to_find is at $(expr index "$name" "$word_to_find")"
+```
+
+### Extracting Substrings
+Substrings can be extracted from a string with `${<string>:<begining index>:<numb of chars>}`
+
+e.g: If the string is *Bash scripting is fun*, to extract *script* from it, can use: 
+```
+sentence="Bash scripting is fun"
+sentence=${sentense:5:6}`
+```
+
+Counting starts from `0` just like arrays. 
+
+e.g: To extract *scripting is fun*
+```
+sentence="Bash scripting is fun"
+sentence=${sentense:5}`
+```
+
+### Replacing substrings
+Part of a string can be replaced by `${<string>/<old chars>/<new chars>}`
+
+e.g: To replace the _fun_ with *powerful*
+```
+sentence="Bash scripting is fun"
+sentence=${sentense/"fun"/"powerful"}`
+```
+
+### Delete substring
+Part of a string can be deleted by replacing it with nothing. 
+
+e.g: In the above example, if we want to remove the word _scripting_, we can do it like:
+```
+sentence="Bash scripting is fun"
+${sentence/"scripting"}`
+```
+
+**To remove all the occurances of a substring:** 
+e.g: To remove all the `-` from `1000-123-456`:
+```
+number=1000-123-456
+number=${number//-}
+```
+
+### Convert UPPER & lower case letters
+Convert to upper case:
+```
+name="john doe"
+name=${name^^}
+```
+
+Convert to lower case:
+```
+name=JOHN DOE
+name=${name,,}
+```
+
+If we use single `^` or `,` only the first letter will be changed.
+
+To make specific characters either upper case or lower case:
+
+`${name^^[jd]}`
+
+`${name,,[OH]}`
+
+
 
