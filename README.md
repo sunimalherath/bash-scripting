@@ -218,3 +218,61 @@ To make specific characters either upper case or lower case:
 
 
 
+## Decision Making
+
+```
+if [ if condition ]; then
+  # logic for the satisfied condition
+elif [ else if condition ]; then
+  # logic for the else if condition
+else
+  # logic for the else condition
+fi
+```
+
+
+### Conditions
+
+**Numbers:**
+
+`$a -lt $b`  => less than
+
+`$a -gt $b`  => greater than
+
+`$a -le $b`  => less than or equal
+
+`$a -ge $b`  => greater than or equal
+
+`$a -eq $b`  => equal
+
+`$a -ne $b`  => not equal
+
+
+
+**Files:**
+
+`-e $var`   => value (file path) in the variable exists
+
+`-d $var`   => value (file path) in the variable exists and is a _directory_
+
+`-f $var`   => value (file path) in the variable exists and is a regular file
+
+`-L $var`   => value (file path) in the vriable exists and is a soft link
+
+
+
+**Strings:**
+
+`$a = $b`   => equal 
+
+`$a != $b`  => not equal
+
+`-z $a`     => string is empty
+
+
+> All these conditions are available in the `man test` command
+
+
+
+
+
