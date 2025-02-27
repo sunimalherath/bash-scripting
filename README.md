@@ -275,4 +275,41 @@ fi
 
 
 
+## Loops
+
+### For Loop
+
+**C - Style**
+
+```
+for (( initialize; condition; increment/decrement)); do
+  # logic when the condition met
+done
+```
+
+_e.g:_
+
+```
+for (( i = 0; i < 10;  i++)); do
+  echo "value of i is $i"
+done
+```
+
+
+**List/Range Style**
+
+```
+for item in [ list ]; do
+   # logic for each item
+done
+```
+
+_e.g:_
+
+```
+for i in {0..9}; do
+  echo "value of i is $i
+done
+```
+
 
