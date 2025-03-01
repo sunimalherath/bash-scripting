@@ -70,7 +70,7 @@ $?      => the exit status of the last executed command
 $!      => the process id of the last executed command
 ```
 
-## Arrays
+## 3. Arrays
 Arrays can be normal (all elements with the same data type) or can be hybrid (with mixed data types)
 
 ### Access Array Elements
@@ -87,7 +87,7 @@ Arrays can be normal (all elements with the same data type) or can be hybrid (wi
 - To remove all the elements `unset arr1`
   
 
-## Arithmetic Operations
+## 4. Arithmetic Operations
 
 ### Addition and Substraction
 ```
@@ -128,7 +128,7 @@ result=$((n1 % n2))
 ```
 
 
-## Working with Strings
+## 5. Working with Strings
 
 ### Get number of characters in a string
 ```
@@ -218,7 +218,7 @@ To make specific characters either upper case or lower case:
 
 
 
-## Decision Making
+## 6. Decision Making
 
 ```
 if [ if condition ]; then
@@ -275,7 +275,7 @@ fi
 
 
 
-## Loops
+## 7. Loops
 
 ### For Loop
 
