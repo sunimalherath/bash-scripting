@@ -312,4 +312,38 @@ for i in {0..9}; do
 done
 ```
 
+### While Loops
 
+```
+while [ condition ]; do
+  # logic to execute while the condition is true
+done
+```
+
+_e.g:_
+
+```
+num=1
+while [ $num -le 10 ]; do
+   echo $num
+   num=$(($num + 1))
+done
+```
+
+### Until Loops
+
+```
+until [ conditions ]; do
+  # logic to execute until the condition met
+done
+```
+
+_e.g:_
+
+```
+num=1
+until [ $num -gt 10 ]; do
+   echo $num
+   num=$(($num + 1))
+done
+```
