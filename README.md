@@ -347,3 +347,40 @@ until [ $num -gt 10 ]; do
    num=$(($num + 1))
 done
 ```
+
+_e.g: loop array elements_
+
+```
+evenNums=(2 4 6 8 10 12 14 16 18 20)
+
+for num in ${evenNums[@]}; do
+   echo $num
+done
+```
+
+### Break and Continue in loops
+
+_e.g: break_
+
+```
+nums=(11 2 6 7 20 15 9 8)
+
+for num in ${nums[@]}; do
+        if [ $((num % 5)) -eq 0 ]; then
+                echo "The first number that divisible by 5 is $num"
+                break
+        fi
+done
+```
+
+_e.g: continue_
+
+```
+for((i=0; i<10; i++)); do
+        if [ $((i % 2)) -eq 0 ]; then
+                continue                                                                                                                                                                             
+        fi
+        
+        echo $i                                                                                                                                                                                      
+done
+```
